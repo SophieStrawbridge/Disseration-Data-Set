@@ -1,0 +1,20 @@
+<mujoco>
+    <asset>
+        <!-- Define meshes -->
+        <mesh name="mesh_000" file="/Users/sophiestrawbridge/Desktop/GeometricalPickAndPlace 2/objects/name/textured.obj"/>
+        
+        <material name="material_000" texture="texture_000" />
+
+        <texture name="texture_000" type="2d" file="/Users/sophiestrawbridge/Desktop/GeometricalPickAndPlace 2/objects/name/texture_map.png"/>
+    </asset>
+        
+    <worldbody>
+        <body name="object_000" pos="0 0.0 0.1" euler = "0 0 0">
+            <inertial mass="5.0" diaginertia="0.01 0.01 0.01" pos="0 0 0"/>
+            <geom name="object_000_geom" type="mesh" material="material_000" mesh="mesh_000" 
+                solimp="0.99 0.99 0.01" solref="0.002 1" friction="1.0 0.1 0.1"/>
+            <joint name="object_000_joint" type="free" damping="1"/>
+        </body>
+    </worldbody>
+</mujoco>
+

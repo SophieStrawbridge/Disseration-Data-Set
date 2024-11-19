@@ -1,0 +1,10 @@
+<mujocoinclude>
+  <worldbody>
+
+    <body name="object_000" pos="0 0.0 1.08" euler = "0 0 0">
+        <geom name="object_000_geom" fromto="0.0 0.0 0.2 0.0 0.0 0.0" solimp="0.998 0.998 0.001" solref="0.001 1" density="500" friction="0.95 0.3 0.1" size="0.03" type="box" rgba="1 0.56 0.43 1"/>
+        <joint name="object_000_joint" type="free" damping="0.0005"/>
+    </body>
+
+  </worldbody>
+</mujocoinclude>

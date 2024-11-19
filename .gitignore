@@ -1,0 +1,3 @@
+# Include ZIP files (normally ignored by default)
+init
+.zip
